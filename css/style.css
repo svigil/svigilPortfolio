@@ -70,9 +70,11 @@ html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  background-color: rgb(167, 12, 12);
 }
 body {
   margin: 0;
+  background-color: rgb(167, 12, 12);
 }
 article,
 aside,
@@ -87,6 +89,7 @@ nav,
 section,
 summary {
   display: block;
+
 }
 audio,
 canvas,
@@ -7009,7 +7012,7 @@ body:after {
 }
 .lb-nav a {
   outline: none;
-  background-image: url('data:image/gif;base64,R0lGODlhAQABAPAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==');
+  background-image: url(https://images.unsplash.com/photo-1534022030890-5725a0d1e92c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=cc0f7ecb1c4a01cd0a700f69f4df5a24&auto=format&fit=crop&w=1266&q=80);
 }
 .lb-prev,
 .lb-next {
