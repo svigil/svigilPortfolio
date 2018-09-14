@@ -1,0 +1,110 @@
+// CONTACTS MODULE
+#contacts .section-content{
+	padding-bottom: 0;
+}
+
+.contact-form{
+	margin-bottom: 30px;
+}
+
+.contacts-inputs{
+	padding: 0 0 15px 0;
+	margin: 0;
+	list-style: none;
+}
+
+.contacts-item{
+	margin-bottom: 30px;
+	position: relative;
+
+	&:last-child{
+		margin-bottom: 0;
+	}
+}
+
+.contacts-title{
+	.fz(32);
+	margin-bottom: 40px;
+	color: green;
+}
+
+.contacts-label{
+	.fz(14);
+	text-transform: uppercase;
+	font-weight: @font_normal;
+	color: darken(@color_grey, 10%);
+	margin-bottom: 15px;
+}
+
+.contacts-input{
+	font-size: 14px;
+	padding-bottom: 10px;
+	box-shadow: none;
+	padding: 10px 15px;
+	line-height: 16px;
+	height: auto;
+	border-radius: 0;
+
+	&:focus{
+		border-color: @color_main;
+	}
+}
+
+textarea.contacts-input{
+	height: 142px;
+}
+
+.form-button{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	padding: 5px 15px;
+	color: white;
+	background-color: @color_main;
+	border: 1px solid darken(@color_main, 10%);
+	font-weight: @font_light;
+	border-radius: 2px;
+}
+
+.contacts-input::-webkit-input-placeholder {
+   line-height: 1.4;
+}
+
+.contacts-input:-moz-placeholder { /* Firefox 18- */
+   line-height: 1.4; 
+}
+
+.contacts-input::-moz-placeholder {  /* Firefox 19+ */
+   line-height: 1.4; 
+}
+
+.contacts-input:-ms-input-placeholder {  
+   line-height: 1.4; 
+}
+
+#google-map{
+	width: 100%;
+	height: 400px;
+	z-index: 999;
+}
+
+.available{
+	color: darken(@color_grey, 40%);
+	margin-bottom: 20px;
+	position: relative;
+	padding-left: 15px;
+	font-weight: @font_light;
+
+	&:before{
+		position: absolute;
+		width: 8px;
+		height: 8px;
+		display: block;
+		content: '';
+		background-color: @color_main;
+		border-radius: 50%;
+		left: 0;
+		top: 5px;
+	}
+
+}

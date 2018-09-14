@@ -1,0 +1,30 @@
+// PERSONAL INFORMATION MODULE
+.personal-information{
+	margin-bottom: 40px;
+}
+
+.personal-information-row{
+	position: relative;
+	border-bottom: 1px solid lighten(@color_grey, 5%);
+
+	&:last-child{
+		border: 0;
+	}
+
+}
+
+.personal-information-col {
+	padding: 14px 0;
+	font-weight: @font_light;
+
+	&:first-child{
+		top: 0;
+		left: 0;
+		width: 120px;
+		position: absolute;
+	}
+
+	&:last-child{
+		padding-left: 120px;
+	}
+}

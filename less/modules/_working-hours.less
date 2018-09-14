@@ -1,0 +1,28 @@
+// WORKING HOURS MODULE
+.working-hours{
+	padding: 0;
+	margin: 0 0 40px 0;
+	list-style-type: none;
+}
+
+.work-day-name{
+	position: relative;
+	padding-left: 120px;
+	line-height: 50px;
+	border-bottom: 1px solid @color_grey;
+	margin: 0;
+	text-align: right;
+	.transition(color);
+
+	&:hover{
+		color: @color_main;
+	}
+
+	& > span{
+		padding: 0;
+		position: absolute;
+		border-radius: 2px;
+		left: 0;
+		top: 0;
+	}
+}

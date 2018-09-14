@@ -1,0 +1,50 @@
+// NUMBER MODULE
+.number{
+	box-shadow: 0 0 2px 0 rgba(0,0,0,.2);
+	padding: 20px 10px;
+	border-radius: 2px;
+	background-color: #f7f7f7;
+	margin-bottom: 30px;
+
+	&:hover {
+
+		.number-value{
+			color: @color_main;
+		}
+	}
+
+}
+
+.number-value{
+	font-size: 50px;
+	text-align: center;
+	margin-bottom: 30px;
+	position: relative;
+	color: darken(@color_grey, 40%);
+	.transition(color);
+
+	&:before, &:after{
+		position: absolute;
+		display: block;
+		content: '';
+		width: 15px;
+		height: 1px;
+		background-color: darken(@color_grey, 20%);
+		bottom: -11px;
+		left: 50%;
+		margin-left: -8px;
+	}
+
+	&:before{
+		.transform(rotate(45deg));
+	}
+
+	&:after{
+		.transform(rotate(-45deg));
+	}
+}
+
+.number-title{
+	font-size: 16px;
+	text-align: center;
+}

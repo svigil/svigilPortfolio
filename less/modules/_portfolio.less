@@ -1,0 +1,151 @@
+// PORTFOLIO MODULE
+.portfolio-placeholder{
+	width: 100%;
+	height: auto;
+}
+
+.portfolio-item-title{
+	.fz(28);
+	color: @color_text;
+	margin: 20px 0;
+}
+
+.portfolio-gallery{
+	display: none;
+}
+
+.portfolio-item-preview-wrapper{
+	position: relative;
+	overflow: hidden;
+	cursor: pointer;
+	margin-bottom: 30px;
+
+	a{
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: 20;
+		position: absolute;
+		display: block;
+	}
+
+	&:after, &:before{
+		position: absolute;
+		content: '';
+		display: block;
+		border: 2px solid white;
+		.transition-all();
+	}
+
+	&:after{
+		top: 20px;
+		left: 20px;
+		right: 20px;
+		bottom: 20px;
+	}
+
+	&:before{
+		z-index: 2;
+		top: 20px;
+		left: 20px;
+		right: 20px;
+		bottom: 20px;
+	}
+
+	&:hover{
+		&:after{
+			top: 20px;
+			left: 40px;
+			right: 20px;
+			bottom: 40px;
+			background-color: rgba(0,0,0,.3);
+		}
+
+		&:before{
+			top: 40px;
+			left: 20px;
+			right: 40px;
+			bottom: 20px;
+			background-color: rgba(0,0,0,.3);
+		}
+		
+		.portfolio-item-preview.preview-larger{
+			.transform(translateX(-20px) rotate(0.02deg));
+		}
+
+		.portfolio-item-preview.preview-higher{
+			.transform(translateY(-20px) rotate(0.02deg));
+		}
+
+		.portfolio-hover{
+			opacity: 1;
+		}
+	}
+}
+
+.portfolio-hover{
+	position: absolute;
+	z-index: 3;
+	color: white;
+	top: 50%;
+	left: 50%;
+	text-align: center;
+	opacity: 0;
+	.transform(translateX(-50%) translateY(-50%));
+	.transition(opacity);
+}
+
+.portfolio-title{
+	margin-bottom: 15px;
+	font-weight: @font_normal;
+}
+
+.portfolio-category{
+	font-size: 12px;
+	font-weight: @font_normal;
+}
+
+.portfolio-item-preview{
+	position: absolute;
+	left: 0;
+	right: auto;
+	max-width: none;
+	top: 0;
+
+	.transition-single(transform 5s ease-in-out);
+
+	&.preview-larger{
+		height: 100%;
+		width: auto;
+	}
+
+	&.preview-higher{
+		height: auto;
+		width: 100%;
+	}
+
+}
+
+
+// Customize LightBox
+.lightbox{
+
+	.lb-closeContainer{
+		display: none;
+	}
+
+	.lb-details{
+		width: 100%;
+	}
+
+	.lb-caption{
+		margin-top: 10px;
+	    display: block !important;
+	    margin-bottom: 10px;
+	    line-height: 1.4;
+	    font-family: inherit;
+	    font-weight: 300;
+	    color: white;
+	}
+}

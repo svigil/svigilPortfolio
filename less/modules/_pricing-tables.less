@@ -1,0 +1,58 @@
+// PRICE TABLE MODULE
+.price-table{
+	box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.2);
+	padding: 35px 0;
+
+	&:hover .price-item.passive{
+		opacity: 0.3;
+	}
+}
+
+.price-table-plan{
+	font-size: 18px;
+	text-align: center;
+	margin-bottom: 35px;
+}
+
+.price-table-price{
+	text-align: center;
+	font-size: 60px;
+	font-weight: @font_normal;
+	color: darken(@color_grey, 55%);
+
+
+	span{
+		font-size: 30px;
+	}
+}
+
+.price-table-list{
+	list-style-type: none;
+	padding: 0 50px;
+	margin: 0;
+	font-size: 14px;
+}
+
+.price-item{
+	margin-bottom: 15px;
+	padding-left: 30px;
+	position: relative;
+	color: darken(@color_grey, 30%);
+	.transition(opacity);
+
+	&:before{
+		font-family: 'FontAwesome';
+		position: absolute;
+		left: 0;
+		top: 3px;
+		content: '\f00c';
+		display: block;
+		color: @color_main;
+		font-size: 12px;
+	}
+
+	&.passive:before{
+		content: '\f00d';
+		color: darken(@color_grey, 20%);
+	}
+}

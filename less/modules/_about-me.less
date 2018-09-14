@@ -1,0 +1,36 @@
+// ABOUT ME MODULE
+.about-me{
+
+}
+
+.social{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.social-item{
+	display: inline-block;
+	vertical-align: top;
+	zoom: 1;
+	*display: inline;
+
+	a{
+		display: block;
+		width: 40px;
+		height: 40px;
+		line-height: 39px;
+		text-align: center;
+		color: darken(@color_grey, 30%);
+		border: 1px solid lighten(@color_grey, 10%);
+		margin-right: 10px;
+		margin-bottom: 14px;
+
+		.transition-custom(opacity 0.3s ease, border-color 0.3s ease);
+
+		&:hover{
+			color: @color_main;
+			border-color: @color_main;
+		}
+	}
+}

@@ -1,0 +1,41 @@
+// SCHEDULE MODULE
+.schedule-list{
+	list-style-type: none;
+	padding: 0 30px 0 40px;
+	margin: 0;
+	border-left: 1px solid @color_grey;
+}
+
+.schedule-item{
+	margin-bottom: 30px;
+}
+
+.schedule-date{
+	margin-bottom: 10px;
+	font-size: 16px;
+	color: darken(@color_grey, 30%);
+}
+
+.schedule-title{
+	margin-bottom: 10px;
+	position: relative;
+	font-size: 24px;
+	line-height: 1.4;
+
+	&:before{
+		position: absolute;
+		content: '';
+		display: block;
+		width: 15px;
+		height: 15px;
+		border-radius: 50%;
+		border: 2px solid @color_grey;
+		background-color: white;
+		left: -48px;
+		top: 11px;
+	}
+}
+
+.schedule-description{
+	margin: 0;
+}

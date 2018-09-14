@@ -1,0 +1,49 @@
+// ARTICLE MODULES
+.articles{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	margin-bottom: 20px;
+}
+
+.article-item{
+	position: relative;
+	padding-top: 20px;
+	margin-bottom: 15px;
+	font-weight: @font_light;
+
+	&:last-child{
+		margin: 0;
+	}
+}
+
+.article-date{
+	font-weight: normal;
+	color: darken(@color_grey, 30%);
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	font-size: 12px;
+}
+
+.read-more{
+	color: darken(@color_grey, 30%);
+	font-weight: @font_light;
+	padding: 0 15px;
+	line-height: 30px;
+	font-size: 14px;
+	border-radius: 3px;
+	border: 1px solid darken(@color_grey, 5%);
+	display: inline-block;
+	vertical-align: top;
+	zoom: 1;
+	*display: inline;
+	.transition-custom(color 0.3s ease, border-color 0.3s ease);
+
+	&:hover{
+		text-decoration: none;
+		color: @color_main;
+		border-color: @color_main;
+	}
+}

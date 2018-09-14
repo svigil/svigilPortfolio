@@ -1,0 +1,62 @@
+body{
+	background-color: #ececed;
+	overflow: hidden;
+	position: relative;
+}
+
+img{
+	max-width: 100%;
+}
+
+.header-wrapper {
+	padding: 75px 0 100px 0;
+}
+
+.section-main{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.cv-content{
+	margin: 0 auto;
+	position: relative;
+}
+
+.page{
+	height: 100%;
+    position: relative;
+    display: table;
+    width: 100%;
+}
+
+.page-content{
+	padding: 20px 80px;
+}
+
+.page-content-tight{
+	padding: 20px 160px;
+}
+
+.page-text{
+	margin-bottom: 15px;
+	line-height: 1.6;
+	.fz(16);
+
+	&:last-child{
+		margin-bottom: 0;
+	}
+}
+
+.featured-image{
+	margin-bottom: 40px;
+}
+
+.cv-content-wrapper {
+	position: relative;
+
+	&:after{
+		content: '';
+		display: block;
+		clear: both;
+	}
+}

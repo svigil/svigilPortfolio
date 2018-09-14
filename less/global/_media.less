@@ -1,0 +1,394 @@
+@media (max-width: 1600px) {
+	/*==========  Layout  ==========*/
+	.cv-content{
+		max-width: 950px;
+	}
+
+	.section-title{
+		.fz(40);
+	}
+
+	.section-subtitle{
+		.fz(17);
+	}
+
+	.page-content-tight{
+		padding: 20px 90px;
+	}
+
+	.page-content{
+		padding: 20px 60px;
+	}
+
+	.tile-title{
+		font-size: 14px;
+	}
+
+	/*==========  Price Table  ==========*/
+	.price-table-list{
+		padding: 0 25px;
+	}
+
+	.price-table{
+		padding: 30px 0;
+	}
+
+	.price-table-plan{
+		margin-bottom: 25px;
+	}
+
+	.price-table-price{
+		margin-bottom: 20px;
+	}
+}
+
+@media (max-width: 1400px) {
+	/*==========  Layout  ==========*/
+	.cv-content{
+		max-width: 850px;
+	}
+
+	.section-title{
+		font-size: 2em;
+	}
+
+	.section-subtitle{
+		font-size: 0.9em;
+		margin-bottom: 40px;
+	}
+
+	.section-content{
+		padding: 40px 0;
+	}
+
+	.page-content-tight{
+	    padding: 10px 70px;
+	}
+
+	/*==========  About  ==========*/
+	.page-text, .personal-information, .articles{
+		.fz(14);
+	}
+
+	.category-title{
+		.fz(20);
+	}
+
+	/*==========  Skills  ==========*/
+	.skills{
+		padding: 30px;
+	}
+
+	.language-skills{
+		font-size: 12px;
+	}
+
+	.language-item{
+		padding: 20px;
+	}
+
+	/*==========  Numbers  ==========*/
+	.number-title{
+		font-size: 12px;
+	}
+
+	.number{
+		padding: 10px;
+	}
+
+	.number-value{
+		font-size: 40px;
+	}
+
+	/*==========  Education  ==========*/
+	.education-title{
+		font-size: 1.2em;
+	}
+
+	.education-description{
+		font-size: 14px;
+	}
+
+	/*==========  Accordion  ==========*/
+	.accordion-title {
+	    font-size: 1.2em;
+	    line-height: 1.4;
+	}
+
+	.accordion-content{
+		font-size: 14px;
+	}
+
+	/*==========  Price table  ==========*/
+	.price-table-list{
+		font-size: 12px;
+	}
+
+	/*==========  Work Schedule  ==========*/
+	.work-day-name{
+		font-size: 14px;
+		padding-left: 70px;
+	}
+
+	.schedule-title{
+		.fz(20);
+	}
+
+	.schedule-date, .schedule-description, .portfolio-title{
+		font-size: 14px;
+	}
+
+	/*==========  Navigation  ==========*/
+	.section-nav{
+	    width: 50px;
+	    height: 150px;
+	    right: -50px;
+	}
+
+	.close-section:after, .close-section:before{
+		width: 25px;
+	    margin-left: -12px;
+	    border-bottom: 1px solid #5a5f70;
+        height: 1px;
+	}
+
+	.next-section:before, .prev-section:before{
+		width: 15px;
+		height: 15px;
+		margin-top: -8px;
+	    border-top: 1px solid #5a5f70;
+	}
+
+	.next-section:before{
+		margin-left: -12px;
+	    border-right: 1px solid #5a5f70;
+	}
+
+	.prev-section:before{
+		margin-left: -5px;
+		border-left: 1px solid #5a5f70;
+	}
+
+	/*==========  Scroll bar  ==========*/
+	.scroll-bar{
+		right: 10px;
+	    top: 180px;
+	    width: 5px;
+	}
+
+	/*==========  Menu  ==========*/
+	.menu-trigger{
+		top: 50px;
+		right: 50px;
+	}
+
+	/*==========  Profile  ==========*/
+	.profile{
+		top: 20px;
+		padding: 0 40px;
+	}
+
+	.menu-wrapper.active .profile-photo{
+		left: -60px;
+	}
+
+	.profile-photo{
+		max-width: 120px;
+	}
+
+	.profile-function{
+		border-bottom: 0;
+		position: relative;
+
+		&:after{
+			content: '';
+			display: block;
+			position: absolute;
+			height: 1px;
+			width: 30px;
+			background-color: #ccc;
+			bottom: 0;
+			left: 50%;
+			margin-left: -15px;
+		}
+	}
+
+	.profile-info{
+		text-align: center;
+	}
+
+	.profile-list{
+		display: none;
+	}
+
+	/*==========  Menu  ==========*/
+	.menu{
+		top: 150px;
+	}
+
+	.menu-item a{
+		font-weight: 300;
+		line-height: 40px;
+	}
+
+	.box{
+		padding-left: 25px;
+	}
+
+	.box-title{
+		font-size: 16px;
+	}
+
+	.box-icon{
+		font-size: 14px;
+	}
+
+	.box-description{
+		font-size: 13px;
+	}
+
+}
+
+@media (max-width: 1200px) {
+	.menu-wrapper{
+		display: none;
+	}
+
+	.main-page, 
+	.section-nav,
+	.scroll-bar{
+		display: none !important;
+	}
+
+	.js-animated-content, .js-animated-video{
+		opacity: 1 !important;
+		.transform(initial) !important;
+	}
+
+	.section{
+		display: block;
+		position: relative;
+		visibility: visible;
+		margin-bottom: 15px;
+	}
+
+	.cv-content{
+		padding-top: 15px;
+	}
+
+	body{
+		overflow-y:scroll;
+	}
+
+	.page{
+		display: block;
+		width: auto;
+		height: auto;
+	}
+
+	.section-main{
+		display: block;
+	}
+}
+
+@media (max-width: 1024px) {
+
+}
+
+@media (max-width: 990px) {
+	.testimonial{
+		margin-bottom: 30px !important;
+	}
+
+	.language-item{
+		width: 47.5%;
+		margin-bottom: 30px;
+	}
+
+	.language-item:nth-child(2n){
+		margin-right: 0;
+		margin-bottom: 30px;
+	}
+
+	.price-table{
+		width: 300px;
+		max-width: 100%;
+	    margin: 0 auto 30px auto;
+	}
+}
+
+@media (max-width: 768px) {
+    
+}
+
+@media (max-width: 480px) {
+	.section-title{
+		padding: 0 30px;
+		font-size: 1.7em;
+	}
+
+	.language-item{
+		width: 100%;
+		margin-bottom: 30px;
+	}
+
+	.section-subtitle{
+		font-size: 0.8em;
+		line-height: 1.4;
+	}
+
+	.page-content-tight{
+	    padding: 10px 50px;
+	}
+
+	.page-content {
+	    padding: 20px 40px;
+	}
+
+	.education-list-item{
+		padding-left: 0;
+		padding-top: 120px;
+		text-align: center;
+	}
+
+	.education-period{
+		left: 50%;
+		margin-left: -50px;
+	}
+
+	.accordion-title{
+		line-height: 1.4;
+		font-size: 1em;
+	}
+
+	.accordion-content{
+		font-size: 14px;
+		font-weight: 300;
+	}
+
+	.page-text{
+		font-size: 0.775em;
+	}
+
+	.testimonial-message, .schedule-date, .schedule-description{
+		font-size: 13px;
+	}
+
+	.skills-block{
+		background-color: transparent;
+		padding: 20px 0;
+	}
+
+	.skill-progress{
+		background-color: #EFEFEF;
+	}
+
+	.skill-experience{
+		background-color: white;
+	}
+
+	.owl-carousel .owl-item .experience-brand{
+		width: 80%;
+	}
+
+}

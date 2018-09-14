@@ -1,0 +1,67 @@
+// EDUCATION MODULE
+.education-list{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.education-list-item{
+	position: relative;
+	padding-left: 140px;
+	margin-bottom: 50px;
+
+	&:last-child{
+		margin: 0;
+	}
+}
+
+.education-period{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100px;
+	height: 100px;
+	background-color: #f7f7f7;
+	border-radius: 50%;
+}
+
+.educ-first-level, .educ-second-level{
+	display: block;
+	position: relative;
+	text-align: center;
+	font-size: 18px;
+	font-weight: @font_light;
+	height: 50%;
+}
+
+.educ-first-level{
+	padding-top: 16px;
+
+	&:after{
+		display: block;
+		position: absolute;
+		content: '';
+		width: 10px;
+		height: 1px;
+		background-color: @color_text;
+		bottom: -1px;
+		left: 50%;
+		margin-left: -5px;
+	}
+}
+
+.educ-second-level{
+	padding-top: 3px;
+}
+
+.education-title{
+	.fz(24);
+	color: #333;
+	line-height: 1.4;
+	margin-bottom: 10px;
+}
+
+.education-description{
+	font-size: 16px;
+	color: lighten(@color_text, 5%)
+}

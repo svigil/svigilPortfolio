@@ -1,0 +1,32 @@
+// CIRCLE PROGRESS
+.circle-progress{
+	margin-bottom: 40px;
+	position: relative;
+
+	&:hover .circle-value{
+		color: @color_main;
+	}
+}
+
+.circle-progress-elem{
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.circle-value{
+	position: absolute;
+	font-size: 35px;
+	top: 36px;
+	width: 100%;
+	text-align: center;
+	color: darken(@color_grey, 30%);
+	.transition(color);
+
+	span{
+		font-size: 20px;
+	}
+}
+
+.circle-progress-title{
+	text-align: center;
+}

@@ -1,0 +1,80 @@
+// EXPERIENCE MODULE
+.experience-slider{
+	position: relative;
+	padding-top: 60px;
+	margin-bottom: 30px;
+}
+
+.experience-list{
+
+	.owl-controls{
+		top: -60px;
+	    position: absolute;
+	    width: 100%;
+	}
+
+}
+
+.experience-list-item{
+	background-color: #f7f7f7;
+	padding: 160px 30px 30px 30px;
+	-webkit-backface-visibility: hidden;
+	height: 100%;
+	position: relative;
+	box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.2);
+
+	img{
+		-webkit-backface-visibility: hidden;
+	}
+}
+
+.experience-brand{
+	position: absolute;
+	max-width: 200px;
+	top: 80px;
+	left: 50%;
+	.transform(translateY(-50%) translateX(-50%));
+}
+
+.experience-period{
+	color: #6b7281;
+	font-weight: @font_light;
+	.fz(18);
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.experience-description{
+	text-align: center;
+	.fz(14);
+}
+
+.experience-nav{
+	position: absolute;
+	font-size: 20px;
+	padding: 0 20px;
+	background-color: #f7f7f7;
+	line-height: 40px;
+	top: 0;
+	cursor: pointer;
+
+	.transition-custom(color 0.3s ease, opacity 0.3s ease);
+
+	&:hover{
+		color: @color_main;
+	}
+
+	&.disabled{
+		opacity: 0.4;
+		cursor: default;
+		color: #333;
+	}
+
+	&.exp-next{
+		right: 0;
+	}
+
+	&.exp-prev{
+		left: 0;
+	}
+}
